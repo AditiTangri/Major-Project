@@ -1,0 +1,49 @@
+processed_feature,mean_abs_shap,rank
+num__pra,1.569595,1
+num__rbmi,0.6023255,2
+num__age10,0.54083085,3
+num__dageattx,0.5207624,4
+num__ageattx,0.36573026,5
+num__cit,0.30555752,6
+cat__induction_Campath,0.24975573,7
+num__abomm,0.2428978,8
+num__mmdr,0.23892355,9
+num__yrtx,0.18355832,10
+cat__ethnicity_White,0.18224801,11
+cat__dcmv_Negative,0.17827755,12
+cat__dtype_DBD,0.13480544,13
+num__totalmm,0.09853596,14
+cat__dtype_DCD,0.0863182,15
+cat__prd_GN,0.08577173,16
+cat__prd_Reflux/CPN,0.08372159,17
+cat__prd_Unknown,0.07774691,18
+cat__ethnicity_Asian,0.07154509,19
+cat__premt_tx_No,0.068326525,20
+cat__dtype_Living donor,0.06619891,21
+num__mma,0.0634169,22
+cat__prd_ADPKD,0.057024773,23
+cat__sex_Female,0.053538203,24
+cat__induction_Simulect,0.051617574,25
+cat__prd_DKD,0.04627619,26
+num__crf,0.043135438,27
+cat__rdm_No,0.034400884,28
+cat__rcmv_Negative,0.033731308,29
+cat__prd_Other,0.027420063,30
+cat__dcmv_Positive,0.022988401,31
+num__mmb,0.022793436,32
+cat__citcat_Less than 24h,0.016946338,33
+cat__rcmv_Positive,0.015795909,34
+cat__sex_Male,0.013587827,35
+cat__debv_Negative,0.00834451,36
+cat__age60_60 and above,0.003930069,37
+cat__rdm_Yes,0.0036908628,38
+cat__premt_tx_Yes,0.0030698592,39
+cat__debv_Positive,0.0021538974,40
+cat__ethnicity_Black,0.0018862349,41
+cat__prevtx_No,0.0012028386,42
+cat__citcat_more than 24h,0.00087745977,43
+cat__prevtx_Yes,0.0,44
+cat__ethnicity_Other,0.0,45
+cat__rebv_Positive,0.0,46
+cat__rebv_Negative,0.0,47
+cat__age60_Less than 60,0.0,48

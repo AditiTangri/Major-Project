@@ -1,0 +1,12 @@
+{
+    "method": "Platt scaling / logistic calibration",
+    "fitted_on": "real-patient OOF predictions",
+    "intercept": -2.133944792763723,
+    "slope": 1.2108801893344316,
+    "oof_raw_roc_auc": 0.9679655301611091,
+    "oof_raw_pr_auc": 0.7722167761702318,
+    "oof_calibrated_roc_auc": 0.9679655301611091,
+    "oof_calibrated_pr_auc": 0.7722167761702318,
+    "oof_calibrated_brier": 0.042877089843944644,
+    "note": "Probabilities are internally calibrated model probabilities and are not externally validated clinical probabilities."
+}

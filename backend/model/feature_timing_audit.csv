@@ -1,0 +1,28 @@
+feature,timing,decision
+yrtx,Baseline / transplant-related,RETAIN
+prevtx,Baseline / transplant-related,RETAIN
+ageattx,Baseline / transplant-related,RETAIN
+sex,Baseline / transplant-related,RETAIN
+ethnicity,Baseline / transplant-related,RETAIN
+prd,Baseline / transplant-related,RETAIN
+rdm,Baseline / transplant-related,RETAIN
+rbmi,Baseline / transplant-related,RETAIN
+premt_tx,Baseline / transplant-related,RETAIN
+dtype,Baseline / transplant-related,RETAIN
+dageattx,Baseline / transplant-related,RETAIN
+dcmv,Baseline / transplant-related,RETAIN
+debv,Baseline / transplant-related,RETAIN
+rcmv,Baseline / transplant-related,RETAIN
+rebv,Baseline / transplant-related,RETAIN
+mma,Baseline / transplant-related,RETAIN
+mmb,Baseline / transplant-related,RETAIN
+mmdr,Baseline / transplant-related,RETAIN
+totalmm,Baseline / transplant-related,RETAIN
+abomm,Baseline / transplant-related,RETAIN
+crf,Baseline / transplant-related,RETAIN
+cit,Baseline / transplant-related,RETAIN
+induction,At transplantation,RETAIN
+pra,Baseline / transplant-related,RETAIN
+age60,Baseline / transplant-related,RETAIN
+citcat,Baseline / transplant-related,RETAIN
+age10,Baseline / transplant-related,RETAIN

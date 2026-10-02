@@ -1,0 +1,336 @@
+.illustration-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 580px;
+  aspect-ratio: 560 / 380;
+  margin: 0 auto;
+
+  border-radius: 28px;
+  overflow: hidden;
+  isolation: isolate;
+
+  background:
+    radial-gradient(
+      circle at 50% 48%,
+      rgba(239, 249, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.96) 42%,
+      rgba(240, 253, 250, 0.72) 100%
+    );
+
+  border: 1px solid rgba(186, 230, 253, 0.75);
+
+  box-shadow:
+    0 30px 80px rgba(14, 116, 144, 0.10),
+    0 10px 30px rgba(15, 23, 42, 0.05),
+    inset 0 1px 0 rgba(255, 255, 255, 0.95);
+}
+
+/* =====================================================
+   BACKGROUND
+   ===================================================== */
+
+.bg-grid {
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(
+      rgba(14, 165, 233, 0.035) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(14, 165, 233, 0.035) 1px,
+      transparent 1px
+    );
+
+  background-size: 28px 28px;
+
+  mask-image: radial-gradient(
+    ellipse at center,
+    black 5%,
+    transparent 75%
+  );
+
+  z-index: -2;
+}
+
+/* =====================================================
+   AMBIENT LIGHT
+   ===================================================== */
+
+.glow {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(70px);
+  z-index: -1;
+}
+
+.glow-blue {
+  width: 300px;
+  height: 300px;
+  right: -100px;
+  top: -120px;
+  background: rgba(56, 189, 248, 0.20);
+  animation: ambient 9s ease-in-out infinite;
+}
+
+.glow-teal {
+  width: 280px;
+  height: 280px;
+  left: -110px;
+  bottom: -120px;
+  background: rgba(45, 212, 191, 0.16);
+  animation: ambient 11s ease-in-out infinite reverse;
+}
+
+/* =====================================================
+   SVG
+   ===================================================== */
+
+.hero-svg {
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+}
+
+/* =====================================================
+   ORBIT
+   ===================================================== */
+
+.orbit {
+  fill: none;
+  stroke: rgba(14, 165, 233, 0.13);
+  stroke-width: 1;
+  stroke-dasharray: 2 10;
+
+  transform-box: fill-box;
+  transform-origin: center;
+
+  animation: rotate 24s linear infinite;
+}
+
+/* =====================================================
+   PROFILES
+   ===================================================== */
+
+.profile {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: float 5s ease-in-out infinite;
+}
+
+.recipient {
+  animation-delay: -2.5s;
+}
+
+.profile-label {
+  fill: #0369a1;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.recipient-label {
+  fill: #0f766e;
+}
+
+/* =====================================================
+   CONNECTION
+   ===================================================== */
+
+.connection {
+  fill: none;
+  stroke: url(#connectionGradient);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-dasharray: 5 8;
+  opacity: 0.65;
+
+  animation: flow 3s linear infinite;
+}
+
+.connection-right {
+  animation-delay: -1.5s;
+}
+
+.signal {
+  filter: url(#softGlow);
+  animation: signalPulse 2.5s ease-in-out infinite;
+}
+
+.signal-teal {
+  fill: #2dd4bf;
+  animation-delay: -1.2s;
+}
+
+.signal-blue {
+  fill: #38bdf8;
+}
+
+/* =====================================================
+   KIDNEY
+   ===================================================== */
+
+.kidney-node {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: nodePulse 3s ease-in-out infinite;
+}
+
+.node-delay-1 {
+  animation-delay: -1s;
+}
+
+.node-delay-2 {
+  animation-delay: -2s;
+}
+
+.node-delay-3 {
+  animation-delay: -1.5s;
+}
+
+/* =====================================================
+   XAI BADGE
+   ===================================================== */
+
+.xai-badge {
+  animation: badgeFloat 5s ease-in-out infinite;
+}
+
+.xai-text {
+  fill: #334155;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.15px;
+}
+
+.status {
+  animation: statusPulse 2s ease-in-out infinite;
+}
+
+/* =====================================================
+   ANIMATION
+   ===================================================== */
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes badgeFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+@keyframes flow {
+  from {
+    stroke-dashoffset: 26;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes signalPulse {
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.25);
+  }
+}
+
+@keyframes nodePulse {
+  0%,
+  100% {
+    opacity: 0.45;
+    transform: scale(0.85);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.12);
+  }
+}
+
+@keyframes statusPulse {
+  0%,
+  100% {
+    opacity: 0.5;
+    transform: scale(0.8);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.15);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes ambient {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate(12px, -10px) scale(1.06);
+  }
+}
+
+/* =====================================================
+   REDUCED MOTION
+   ===================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .illustration-wrapper * {
+    animation: none !important;
+  }
+}
+
+/* =====================================================
+   RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 600px) {
+  .illustration-wrapper {
+    border-radius: 20px;
+  }
+
+  .profile-label {
+    font-size: 8px;
+  }
+
+  .xai-text {
+    font-size: 8px;
+  }
+}

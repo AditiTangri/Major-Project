@@ -1,0 +1,85 @@
+
+OBJECTIVE 1 - FINAL RESULT
+
+Objective:
+To predict kidney donor-recipient compatibility using an ML model.
+
+Target:
+incompatible
+
+Positive class:
+1 = Incompatible
+
+Negative class:
+0 = Compatible
+
+Final number of predictors:
+27
+
+Real dataset:
+436 records
+
+Real development set:
+348 records
+
+Held-out real test set:
+88 records
+
+Synthetic development data:
+788 records
+
+Synthetic sample weight:
+0.25
+
+Validation:
+5-fold cross-fitted real OOF validation
+
+OOF ROC-AUC:
+0.9639
+
+OOF PR-AUC:
+0.7606
+
+Active threshold:
+0.300
+
+Held-out real test ROC-AUC:
+0.9406
+
+Held-out real test PR-AUC:
+0.5789
+
+Held-out real test sensitivity:
+0.7500
+
+Held-out real test specificity:
+0.9250
+
+Held-out real test precision:
+0.5000
+
+Held-out real test NPV:
+0.9737
+
+Held-out real test accuracy:
+0.9091
+
+Held-out real test balanced accuracy:
+0.8375
+
+Held-out real test F1:
+0.6000
+
+Held-out real test Brier score:
+0.0555
+
+Confusion matrix:
+TN = 74
+FP = 6
+FN = 2
+TP = 6
+
+Important:
+The held-out real test set was not used for feature selection,
+preprocessing fitting, calibration, threshold selection,
+or model tuning.

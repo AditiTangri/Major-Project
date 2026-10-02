@@ -1,0 +1,2673 @@
+/* ============================================================
+   ASSESSMENT SECTION
+============================================================ */
+
+.assessment-section {
+    padding: 6rem 0;
+    background: var(--bg-main, #f8fafc);
+}
+
+.assessment-header {
+    max-width: 760px;
+    margin: 0 auto 3rem;
+    text-align: center;
+}
+
+.assessment-header h2 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    color: var(--navy-800, #172033);
+    letter-spacing: -0.025em;
+    margin: 1rem 0;
+}
+
+.assessment-header p {
+    color: var(--text-secondary, #667085);
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.pill-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    padding: 0.5rem 0.85rem;
+
+    border-radius: 999px;
+
+    color: #2563eb;
+    background: #eff6ff;
+
+    border: 1px solid #dbeafe;
+
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+
+/* ============================================================
+   LAYOUT
+============================================================ */
+
+.assessment-layout {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.35fr)
+        minmax(320px, 0.65fr);
+
+    gap: 2rem;
+
+    align-items: start;
+}
+
+.assessment-card,
+.result-card,
+.result-placeholder {
+    background: #ffffff;
+
+    border: 1px solid
+        var(--border-light, #e2e8f0);
+
+    border-radius: 1.25rem;
+
+    box-shadow:
+        0 8px 25px
+        rgba(15, 23, 42, 0.045);
+}
+
+
+/* ============================================================
+   FORM CARD
+============================================================ */
+
+.assessment-card {
+    padding: 2rem;
+}
+
+.card-heading {
+    display: flex;
+
+    gap: 1rem;
+
+    align-items: center;
+
+    padding-bottom: 1.5rem;
+
+    border-bottom:
+        1px solid
+        var(--border-light, #e2e8f0);
+}
+
+.heading-icon,
+.placeholder-icon {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    width: 44px;
+    height: 44px;
+
+    border-radius: 12px;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+}
+
+.card-heading h3 {
+    margin: 0 0 0.25rem;
+
+    color: #172033;
+
+    font-size: 1.15rem;
+}
+
+.card-heading p {
+    margin: 0;
+
+    color: #7b8494;
+
+    font-size: 0.85rem;
+}
+
+
+/* ============================================================
+   FORM SECTIONS
+============================================================ */
+
+.form-section {
+    padding: 1.75rem 0;
+
+    border-bottom:
+        1px solid
+        var(--border-light, #e2e8f0);
+}
+
+.form-section h4 {
+    margin: 0 0 1.25rem;
+
+    color: #172033;
+
+    font-size: 0.9rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.06em;
+}
+
+.form-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 1rem;
+}
+
+
+/* ============================================================
+   FORM FIELDS
+============================================================ */
+
+.form-field {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 0.45rem;
+}
+
+.form-field label {
+    font-size: 0.8rem;
+
+    font-weight: 700;
+
+    color: #172033;
+}
+
+.required {
+    color: #dc2626;
+
+    margin-left: 3px;
+}
+
+.form-field input,
+.form-field select {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    border:
+        1px solid
+        #dce3ec;
+
+    background: #ffffff;
+
+    color: #172033;
+
+    border-radius: 0.65rem;
+
+    padding:
+        0.75rem
+        0.8rem;
+
+    font-size: 0.9rem;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+.form-field input:hover,
+.form-field select:hover {
+    border-color: #b9c6d6;
+}
+
+.form-field input:focus,
+.form-field select:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(37, 99, 235, 0.10);
+}
+
+.form-field input::placeholder {
+    color: #98a2b3;
+}
+
+
+/* ============================================================
+   ACTIONS
+============================================================ */
+
+.assessment-actions {
+    display: flex;
+
+    gap: 0.75rem;
+
+    align-items: center;
+
+    padding-top: 1.5rem;
+}
+
+.assessment-submit {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 0.5rem;
+
+    border: 0;
+
+    cursor: pointer;
+
+    padding:
+        0.875rem
+        1.4rem;
+
+    border-radius: 999px;
+
+    color: #ffffff;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #1d4ed8
+        );
+
+    font-weight: 700;
+
+    box-shadow:
+        0 6px 16px
+        rgba(37, 99, 235, 0.20);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        opacity 0.2s ease;
+}
+
+.assessment-submit:hover:not(:disabled) {
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 9px 20px
+        rgba(37, 99, 235, 0.28);
+}
+
+.assessment-submit:disabled {
+    opacity: 0.7;
+
+    cursor: not-allowed;
+}
+
+.btn-reset {
+    border:
+        1px solid
+        #dce3ec;
+
+    background: #ffffff;
+
+    color: #172033;
+
+    border-radius: 999px;
+
+    padding:
+        0.875rem
+        1.4rem;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.btn-reset:hover:not(:disabled) {
+    background: #f8fafc;
+
+    border-color: #cbd5e1;
+}
+
+.btn-reset:disabled {
+    opacity: 0.6;
+
+    cursor: not-allowed;
+}
+
+
+/* ============================================================
+   ERROR
+============================================================ */
+
+.assessment-error {
+    display: flex;
+
+    align-items: center;
+
+    gap: 0.65rem;
+
+    margin-top: 1.25rem;
+
+    padding:
+        0.9rem
+        1rem;
+
+    border-radius: 0.75rem;
+
+    background: #fff1f2;
+
+    border:
+        1px solid
+        #fecdd3;
+
+    color: #be123c;
+
+    font-size: 0.85rem;
+}
+
+
+/* ============================================================
+   RESULTS COLUMN
+============================================================ */
+
+.results-column {
+    position: sticky;
+
+    top: 2rem;
+}
+
+
+/* ============================================================
+   RESULT PLACEHOLDER
+============================================================ */
+
+.result-placeholder {
+    min-height: 420px;
+
+    padding: 2rem;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+}
+
+.result-placeholder h3 {
+    color: #172033;
+
+    margin:
+        1.25rem
+        0
+        0.5rem;
+}
+
+.result-placeholder p {
+    color: #667085;
+
+    line-height: 1.6;
+
+    max-width: 300px;
+}
+
+.medical-spinner {
+    color: #2563eb;
+}
+
+
+/* ============================================================
+   RESULT CARD
+============================================================ */
+
+.result-card {
+    padding: 1.5rem;
+}
+
+.result-card-header {
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    gap: 1rem;
+
+    padding-bottom: 1.25rem;
+
+    border-bottom:
+        1px solid
+        #e2e8f0;
+}
+
+.result-label {
+    display: block;
+
+    color: #2563eb;
+
+    font-size: 0.65rem;
+
+    font-weight: 800;
+
+    letter-spacing: 0.1em;
+
+    margin-bottom: 0.35rem;
+}
+
+.result-card-header h3 {
+    margin: 0;
+
+    color: #172033;
+
+    font-size: 1.25rem;
+}
+
+
+/* ============================================================
+   RESULT STATUS
+============================================================ */
+
+.result-status {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 0.4rem;
+
+    padding:
+        0.5rem
+        0.75rem;
+
+    border-radius: 999px;
+
+    font-size: 0.75rem;
+
+    font-weight: 800;
+
+    white-space: nowrap;
+}
+
+.result-status.compatible {
+    color: #047857;
+
+    background: #ecfdf5;
+}
+
+.result-status.incompatible {
+    color: #be123c;
+
+    background: #fff1f2;
+}
+
+
+/* ============================================================
+   PROBABILITY
+============================================================ */
+
+.probability-section {
+    display: flex;
+
+    align-items: center;
+
+    gap: 1.25rem;
+
+    padding:
+        1.75rem
+        0;
+}
+
+
+/* ============================================================
+   PROBABILITY RING
+============================================================ */
+
+.probability-ring {
+    --progress: 0%;
+
+    width: 150px;
+    height: 150px;
+
+    min-width: 150px;
+
+    border-radius: 50%;
+
+    background:
+        conic-gradient(
+            #2d6ed6 0%,
+            #2d6ed6 var(--progress),
+            #e8eef7 var(--progress),
+            #e8eef7 100%
+        );
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    position: relative;
+}
+
+.probability-ring::before {
+    content: "";
+
+    position: absolute;
+
+    width: 116px;
+    height: 116px;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+}
+
+.probability-ring-content {
+    position: relative;
+
+    z-index: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+}
+
+.probability-ring-content strong {
+    font-size: 30px;
+
+    font-weight: 800;
+
+    line-height: 1;
+
+    color: #172033;
+}
+
+.probability-ring-content span {
+    margin-top: 6px;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    color: #6b7280;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.04em;
+}
+
+
+/* ============================================================
+   PROBABILITY COPY
+============================================================ */
+
+.probability-copy {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 0.3rem;
+}
+
+.probability-copy span {
+    color: #667085;
+
+    font-size: 0.8rem;
+}
+
+.probability-copy strong {
+    color: #172033;
+
+    font-size: 1.6rem;
+}
+
+
+/* ============================================================
+   RISK MESSAGE
+============================================================ */
+
+.risk-message {
+    display: flex;
+
+    gap: 0.75rem;
+
+    padding: 1rem;
+
+    background: #eff6ff;
+
+    border:
+        1px solid
+        #dbeafe;
+
+    border-radius: 0.8rem;
+
+    color: #2563eb;
+}
+
+.risk-message strong {
+    font-size: 0.85rem;
+}
+
+.risk-message p {
+    margin:
+        0.3rem
+        0
+        0;
+
+    color: #667085;
+
+    font-size: 0.75rem;
+
+    line-height: 1.5;
+}
+
+
+/* ============================================================
+   RESULT GRID
+============================================================ */
+
+.result-grid {
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        1fr;
+
+    gap: 0.75rem;
+
+    margin-top: 1rem;
+}
+
+.result-grid > div {
+    padding: 1rem;
+
+    border:
+        1px solid
+        #e2e8f0;
+
+    border-radius: 0.75rem;
+}
+
+.result-grid span {
+    display: block;
+
+    color: #7b8494;
+
+    font-size: 0.7rem;
+
+    margin-bottom: 0.35rem;
+}
+
+.result-grid strong {
+    color: #172033;
+
+    font-size: 1.15rem;
+}
+
+
+/* ============================================================
+   XAI SECTION
+============================================================ */
+
+.xai-section {
+    margin-top: 24px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+
+/* ============================================================
+   XAI HEADER
+============================================================ */
+
+.xai-header {
+    background:
+        linear-gradient(
+            135deg,
+            #f8fbff 0%,
+            #ffffff 100%
+        );
+
+    border:
+        1px solid
+        #dce8f5;
+
+    border-radius: 20px;
+
+    padding: 24px;
+}
+
+.xai-title-row {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 14px;
+}
+
+.xai-icon {
+    width: 46px;
+    height: 46px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #2563eb;
+
+    background: #eff6ff;
+
+    border:
+        1px solid
+        #dbeafe;
+
+    border-radius: 14px;
+}
+
+.xai-label {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #2563eb;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.12em;
+}
+
+.xai-header h3 {
+    margin: 0;
+
+    color: #172033;
+
+    font-size: 21px;
+
+    font-weight: 750;
+}
+
+.xai-header p {
+    margin:
+        7px
+        0
+        0;
+
+    color: #667085;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+/* ============================================================
+   XAI SUMMARY
+============================================================ */
+
+.xai-summary {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 12px;
+}
+
+.xai-summary-item {
+    background: #ffffff;
+
+    border:
+        1px solid
+        #e4eaf1;
+
+    border-radius: 14px;
+
+    padding:
+        15px
+        16px;
+
+    box-shadow:
+        0 4px 14px
+        rgba(15, 23, 42, 0.035);
+}
+
+.xai-summary-item span {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #7b8494;
+
+    font-size: 11px;
+
+    font-weight: 600;
+}
+
+.xai-summary-item strong {
+    color: #172033;
+
+    font-size: 16px;
+}
+
+.xai-danger {
+    color: #dc2626 !important;
+}
+
+.xai-success {
+    color: #059669 !important;
+}
+
+
+/* ============================================================
+   XAI CARD
+============================================================ */
+
+.xai-card {
+    background: #ffffff;
+
+    border:
+        1px solid
+        #e2e8f0;
+
+    border-radius: 20px;
+
+    padding: 22px;
+
+    box-shadow:
+        0 8px 25px
+        rgba(15, 23, 42, 0.045);
+}
+
+.xai-card-header {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 12px;
+
+    margin-bottom: 18px;
+}
+
+.xai-card-icon {
+    width: 40px;
+    height: 40px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 11px;
+}
+
+.shap-icon {
+    color: #2563eb;
+
+    background: #eff6ff;
+}
+
+.immune-icon {
+    color: #7c3aed;
+
+    background: #f5f3ff;
+}
+
+.lime-icon {
+    color: #0891b2;
+
+    background: #ecfeff;
+}
+
+.xai-card-header h4 {
+    margin: 0;
+
+    color: #172033;
+
+    font-size: 17px;
+
+    font-weight: 750;
+}
+
+.xai-card-header p {
+    margin:
+        4px
+        0
+        0;
+
+    color: #7b8494;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+/* ============================================================
+   SHAP LEGEND
+============================================================ */
+
+.shap-legend {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    margin-bottom: 12px;
+
+    padding:
+        10px
+        12px;
+
+    background: #f8fafc;
+
+    border-radius: 10px;
+
+    color: #64748b;
+
+    font-size: 11px;
+}
+
+.shap-legend > div {
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+}
+
+.legend-dot {
+    width: 8px;
+    height: 8px;
+
+    border-radius: 50%;
+}
+
+.positive-dot {
+    background: #ef4444;
+}
+
+.negative-dot {
+    background: #10b981;
+}
+
+
+/* ============================================================
+   SHAP STATS
+============================================================ */
+
+.shap-stats {
+    display: flex;
+
+    gap: 10px;
+
+    margin-bottom: 15px;
+}
+
+.shap-stat {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding:
+        7px
+        10px;
+
+    background: #f8fafc;
+
+    border-radius: 8px;
+
+    color: #64748b;
+
+    font-size: 11px;
+}
+
+.shap-stat:first-child svg {
+    color: #ef4444;
+}
+
+.shap-stat:last-child svg {
+    color: #10b981;
+}
+
+
+/* ============================================================
+   SHAP LIST
+============================================================ */
+
+.shap-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.shap-feature {
+    padding: 14px;
+
+    border:
+        1px solid
+        #e7ebf0;
+
+    border-radius: 13px;
+
+    background: #ffffff;
+
+    transition:
+        transform 0.18s ease,
+        box-shadow 0.18s ease,
+        border-color 0.18s ease;
+}
+
+.shap-feature:hover {
+    transform:
+        translateY(-1px);
+
+    box-shadow:
+        0 5px 18px
+        rgba(15, 23, 42, 0.06);
+}
+
+.shap-positive:hover {
+    border-color: #fecaca;
+}
+
+.shap-negative:hover {
+    border-color: #a7f3d0;
+}
+
+.shap-feature-main {
+    display: grid;
+
+    grid-template-columns:
+        36px
+        minmax(0, 1fr)
+        auto;
+
+    align-items: center;
+
+    gap: 11px;
+}
+
+.shap-direction {
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 9px;
+}
+
+.shap-direction.positive {
+    color: #dc2626;
+
+    background: #fef2f2;
+}
+
+.shap-direction.negative {
+    color: #059669;
+
+    background: #ecfdf5;
+}
+
+.shap-feature-title {
+    color: #1f2937;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+.shap-feature-code {
+    margin-top: 2px;
+
+    color: #98a2b3;
+
+    font-family:
+        ui-monospace,
+        SFMono-Regular,
+        Menlo,
+        Monaco,
+        Consolas,
+        monospace;
+
+    font-size: 10px;
+}
+
+.shap-value {
+    text-align: right;
+}
+
+.shap-value strong {
+    display: block;
+
+    font-size: 14px;
+
+    font-weight: 800;
+}
+
+.shap-positive .shap-value strong {
+    color: #dc2626;
+}
+
+.shap-negative .shap-value strong {
+    color: #059669;
+}
+
+.shap-value span {
+    display: block;
+
+    margin-top: 2px;
+
+    color: #8a94a5;
+
+    font-size: 9px;
+}
+
+.shap-bar-container {
+    height: 4px;
+
+    margin-top: 11px;
+
+    overflow: hidden;
+
+    background: #f1f5f9;
+
+    border-radius: 10px;
+}
+
+.shap-bar {
+    height: 100%;
+
+    border-radius: inherit;
+}
+
+.shap-bar-positive {
+    background:
+        linear-gradient(
+            90deg,
+            #fca5a5,
+            #ef4444
+        );
+}
+
+.shap-bar-negative {
+    background:
+        linear-gradient(
+            90deg,
+            #6ee7b7,
+            #10b981
+        );
+}
+
+.shap-feature-footer {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 10px;
+
+    margin-top: 6px;
+
+    color: #98a2b3;
+
+    font-size: 9px;
+}
+
+.shap-feature-footer strong {
+    color: #64748b;
+}
+
+
+/* ============================================================
+   NO SHAP / LIME DATA
+============================================================ */
+
+.xai-empty {
+    text-align: center;
+
+    padding:
+        30px
+        22px;
+}
+
+.xai-empty-icon {
+    width: 48px;
+    height: 48px;
+
+    margin:
+        0
+        auto
+        12px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #2563eb;
+
+    background: #eff6ff;
+
+    border-radius: 14px;
+}
+
+.xai-empty h4 {
+    margin:
+        0
+        0
+        7px;
+
+    color: #172033;
+
+    font-size: 15px;
+}
+
+.xai-empty p {
+    max-width: 460px;
+
+    margin:
+        0
+        auto
+        7px;
+
+    color: #667085;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+}
+
+.xai-empty small {
+    color: #98a2b3;
+
+    font-size: 10px;
+}
+
+
+/* ============================================================
+   IMMUNOLOGICAL FACTORS
+============================================================ */
+
+.immune-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 14px;
+}
+
+.immune-factor-info {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 6px;
+}
+
+.immune-factor-info span {
+    color: #344054;
+
+    font-size: 12px;
+
+    font-weight: 650;
+}
+
+.immune-factor-info strong {
+    color: #7c3aed;
+
+    font-size: 12px;
+}
+
+.immune-bar {
+    width: 100%;
+
+    height: 6px;
+
+    overflow: hidden;
+
+    background: #f1f5f9;
+
+    border-radius: 20px;
+}
+
+.immune-bar-fill {
+    height: 100%;
+
+    min-width: 2%;
+
+    background:
+        linear-gradient(
+            90deg,
+            #a78bfa,
+            #7c3aed
+        );
+
+    border-radius: inherit;
+
+    transition:
+        width 0.5s ease;
+}
+
+
+/* ============================================================
+   LIME
+============================================================ */
+
+.lime-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 9px;
+}
+
+.lime-item {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding:
+        12px
+        14px;
+
+    border-radius: 11px;
+
+    border:
+        1px solid
+        #e5e7eb;
+}
+
+.lime-positive {
+    background: #f0fdfa;
+
+    border-color: #ccfbf1;
+}
+
+.lime-negative {
+    background: #fff7ed;
+
+    border-color: #fed7aa;
+}
+
+.lime-item div {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 2px;
+
+    min-width: 0;
+}
+
+.lime-item div strong {
+    color: #344054;
+
+    font-size: 12px;
+}
+
+.lime-item div span {
+    color: #98a2b3;
+
+    font-size: 9px;
+}
+
+.lime-positive > strong {
+    color: #0891b2;
+}
+
+.lime-negative > strong {
+    color: #ea580c;
+}
+
+
+/* ============================================================
+   XAI NOTE
+============================================================ */
+
+.xai-note {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 9px;
+
+    padding:
+        13px
+        15px;
+
+    background: #f8fafc;
+
+    border:
+        1px solid
+        #e2e8f0;
+
+    border-radius: 12px;
+
+    color: #64748b;
+}
+
+.xai-note svg {
+    flex-shrink: 0;
+
+    margin-top: 1px;
+
+    color: #64748b;
+}
+
+.xai-note p {
+    margin: 0;
+
+    font-size: 10px;
+
+    line-height: 1.6;
+}
+
+
+/* ============================================================
+   CLINICAL NOTE
+============================================================ */
+
+.clinical-note {
+    display: flex;
+
+    gap: 0.65rem;
+
+    margin-top: 1rem;
+
+    padding-top: 1rem;
+
+    border-top:
+        1px solid
+        #e2e8f0;
+
+    color: #7b8494;
+}
+
+.clinical-note p {
+    margin: 0;
+
+    font-size: 0.7rem;
+
+    line-height: 1.55;
+}
+
+
+/* ============================================================
+   LOADING ANIMATION
+============================================================ */
+
+.spin {
+    animation:
+        spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* ============================================================
+   TABLET
+============================================================ */
+
+@media (max-width: 1100px) {
+
+    .assessment-layout {
+        grid-template-columns:
+            minmax(0, 1fr)
+            minmax(300px, 0.65fr);
+    }
+
+    .xai-summary {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+}
+
+
+/* ============================================================
+   SMALL TABLET
+============================================================ */
+
+@media (max-width: 1000px) {
+
+    .assessment-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .results-column {
+        position: static;
+    }
+
+    .result-card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+
+/* ============================================================
+   MOBILE
+============================================================ */
+
+@media (max-width: 640px) {
+
+    .assessment-section {
+        padding: 4rem 0;
+    }
+
+    .assessment-header {
+        padding:
+            0
+            1rem;
+    }
+
+    .assessment-header h2 {
+        font-size: 2rem;
+    }
+
+    .assessment-header p {
+        font-size: 0.95rem;
+    }
+
+    .assessment-card {
+        padding: 1.25rem;
+
+        border-radius: 1rem;
+    }
+
+    .card-heading {
+        align-items: flex-start;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .assessment-actions {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .assessment-submit,
+    .btn-reset {
+        width: 100%;
+    }
+
+    .result-card {
+        padding: 1.25rem;
+    }
+
+    .result-card-header {
+        flex-direction: column;
+    }
+
+    .result-status {
+        align-self: flex-start;
+    }
+
+    .probability-section {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .probability-ring {
+        margin: 0 auto;
+    }
+
+    .probability-copy {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .result-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .xai-header,
+    .xai-card {
+        padding: 16px;
+
+        border-radius: 16px;
+    }
+
+    .xai-summary {
+        grid-template-columns:
+            1fr 1fr;
+    }
+
+    .xai-title-row {
+        gap: 10px;
+    }
+
+    .xai-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .xai-header h3 {
+        font-size: 18px;
+    }
+
+    .shap-feature-main {
+        grid-template-columns:
+            34px
+            minmax(0, 1fr);
+    }
+
+    .shap-value {
+        grid-column: 2;
+
+        text-align: left;
+
+        margin-top: 4px;
+    }
+
+    .shap-value span {
+        display: none;
+    }
+
+    .shap-legend {
+        flex-wrap: wrap;
+
+        gap: 10px;
+    }
+
+    .shap-stats {
+        flex-direction: column;
+    }
+
+    .lime-item {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+}
+
+
+/* ============================================================
+   VERY SMALL MOBILE
+============================================================ */
+
+@media (max-width: 420px) {
+
+    .assessment-section {
+        padding:
+            3rem
+            0;
+    }
+
+    .assessment-header h2 {
+        font-size: 1.75rem;
+    }
+
+    .assessment-card {
+        padding: 1rem;
+    }
+
+    .xai-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .xai-title-row {
+        gap: 9px;
+    }
+
+    .xai-icon {
+        width: 36px;
+        height: 36px;
+    }
+
+    .xai-header h3 {
+        font-size: 16px;
+    }
+
+    .xai-card-header h4 {
+        font-size: 15px;
+    }
+
+    .probability-ring {
+        width: 135px;
+        height: 135px;
+
+        min-width: 135px;
+    }
+
+    .probability-ring::before {
+        width: 105px;
+        height: 105px;
+    }
+
+    .probability-ring-content strong {
+        font-size: 27px;
+    }
+}
+/* ============================================================
+   XAI SECTION
+============================================================ */
+
+.xai-section {
+    width: 100%;
+    margin-top: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+/* ============================================================
+   XAI HEADER
+============================================================ */
+
+.xai-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+
+    padding: 1.5rem;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f8fbff 0%,
+            #ffffff 100%
+        );
+
+    border: 1px solid #dce8f5;
+    border-radius: 1.25rem;
+
+    box-shadow:
+        0 6px 20px
+        rgba(15, 23, 42, 0.035);
+}
+
+.xai-title-wrap {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.9rem;
+
+    min-width: 0;
+}
+
+.xai-icon {
+    width: 46px;
+    height: 46px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #2563eb;
+    background: #eff6ff;
+
+    border: 1px solid #dbeafe;
+    border-radius: 14px;
+}
+
+.xai-header .result-label {
+    margin-bottom: 0.3rem;
+}
+
+.xai-header h3 {
+    margin: 0;
+
+    color: #172033;
+
+    font-size: 1.25rem;
+    line-height: 1.35;
+    font-weight: 750;
+}
+
+.xai-header p {
+    max-width: 760px;
+
+    margin: 0.4rem 0 0;
+
+    color: #667085;
+
+    font-size: 0.8rem;
+    line-height: 1.55;
+}
+
+
+/* ============================================================
+   XAI REFRESH BUTTON
+============================================================ */
+
+.xai-refresh {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.45rem;
+
+    flex-shrink: 0;
+
+    padding: 0.65rem 0.9rem;
+
+    border: 1px solid #dce3ec;
+    border-radius: 0.65rem;
+
+    background: #ffffff;
+    color: #344054;
+
+    font-size: 0.75rem;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.xai-refresh:hover:not(:disabled) {
+    background: #f8fafc;
+    border-color: #bfdbfe;
+    color: #2563eb;
+}
+
+.xai-refresh:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+/* ============================================================
+   XAI ERROR
+============================================================ */
+
+.xai-error {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+
+    padding: 1rem 1.1rem;
+
+    background: #fff7ed;
+
+    border: 1px solid #fed7aa;
+    border-radius: 0.9rem;
+
+    color: #c2410c;
+}
+
+.xai-error svg {
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.xai-error strong {
+    display: block;
+
+    color: #9a3412;
+
+    font-size: 0.85rem;
+}
+
+.xai-error p {
+    margin: 0.3rem 0 0;
+
+    color: #7c2d12;
+
+    font-size: 0.75rem;
+    line-height: 1.5;
+}
+
+
+/* ============================================================
+   XAI LOADING
+============================================================ */
+
+.xai-loading {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+
+    padding: 1.25rem 1.5rem;
+
+    background: #f8fbff;
+
+    border: 1px solid #dbeafe;
+    border-radius: 1rem;
+
+    color: #2563eb;
+}
+
+.xai-loading > svg {
+    flex-shrink: 0;
+}
+
+.xai-loading strong {
+    display: block;
+
+    color: #172033;
+
+    font-size: 0.85rem;
+}
+
+.xai-loading p {
+    margin: 0.3rem 0 0;
+
+    color: #667085;
+
+    font-size: 0.75rem;
+}
+
+
+/* ============================================================
+   XAI SUMMARY
+============================================================ */
+
+.xai-summary {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 0.85rem;
+}
+
+.xai-summary-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+
+    padding: 1rem 1.1rem;
+
+    background: #ffffff;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 0.9rem;
+
+    box-shadow:
+        0 4px 14px
+        rgba(15, 23, 42, 0.035);
+}
+
+.xai-summary-item > svg {
+    flex-shrink: 0;
+
+    color: #2563eb;
+}
+
+.xai-summary-item:nth-child(2) > svg {
+    color: #dc2626;
+}
+
+.xai-summary-item:nth-child(3) > svg {
+    color: #059669;
+}
+
+.xai-summary-item span {
+    display: block;
+
+    margin-bottom: 0.2rem;
+
+    color: #7b8494;
+
+    font-size: 0.68rem;
+    font-weight: 600;
+}
+
+.xai-summary-item strong {
+    display: block;
+
+    color: #172033;
+
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+
+
+/* ============================================================
+   XAI TWO-COLUMN PANELS
+============================================================ */
+
+.xai-columns {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 1rem;
+
+    align-items: start;
+}
+
+
+/* ============================================================
+   XAI PANEL
+============================================================ */
+
+.xai-panel {
+    min-width: 0;
+
+    background: #ffffff;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 1.1rem;
+
+    padding: 1.25rem;
+
+    box-shadow:
+        0 6px 20px
+        rgba(15, 23, 42, 0.035);
+}
+
+.increase-panel {
+    border-top: 3px solid #ef4444;
+}
+
+.decrease-panel {
+    border-top: 3px solid #10b981;
+}
+
+
+/* ============================================================
+   XAI PANEL HEADER
+============================================================ */
+
+.xai-panel-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 1rem;
+
+    padding-bottom: 1rem;
+
+    border-bottom: 1px solid #eef2f6;
+}
+
+.xai-panel-heading {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+
+    min-width: 0;
+}
+
+.xai-panel-icon {
+    width: 40px;
+    height: 40px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 11px;
+}
+
+.xai-panel-icon.increase {
+    color: #dc2626;
+    background: #fef2f2;
+}
+
+.xai-panel-icon.decrease {
+    color: #059669;
+    background: #ecfdf5;
+}
+
+.xai-panel-icon.immune {
+    color: #7c3aed;
+    background: #f5f3ff;
+}
+
+.xai-panel-heading h4 {
+    margin: 0;
+
+    color: #172033;
+
+    font-size: 0.9rem;
+    line-height: 1.35;
+    font-weight: 750;
+}
+
+.xai-panel-heading p {
+    margin: 0.3rem 0 0;
+
+    color: #7b8494;
+
+    font-size: 0.7rem;
+    line-height: 1.5;
+}
+
+.factor-count {
+    min-width: 28px;
+    height: 28px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 0.45rem;
+
+    border-radius: 999px;
+
+    font-size: 0.7rem;
+    font-weight: 800;
+}
+
+.increase-count {
+    color: #dc2626;
+    background: #fef2f2;
+}
+
+.decrease-count {
+    color: #059669;
+    background: #ecfdf5;
+}
+
+
+/* ============================================================
+   XAI FACTOR LIST
+============================================================ */
+
+.xai-factor-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.65rem;
+
+    margin-top: 1rem;
+}
+
+
+/* ============================================================
+   XAI FACTOR
+============================================================ */
+
+.xai-factor {
+    display: grid;
+
+    grid-template-columns:
+        34px
+        minmax(0, 1fr)
+        auto;
+
+    align-items: center;
+
+    gap: 0.7rem;
+
+    padding: 0.8rem;
+
+    border: 1px solid #e7ebf0;
+    border-radius: 0.8rem;
+
+    background: #ffffff;
+
+    transition:
+        transform 0.18s ease,
+        box-shadow 0.18s ease,
+        border-color 0.18s ease;
+}
+
+.xai-factor:hover {
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 5px 16px
+        rgba(15, 23, 42, 0.055);
+}
+
+.xai-factor.increase:hover {
+    border-color: #fecaca;
+}
+
+.xai-factor.decrease:hover {
+    border-color: #a7f3d0;
+}
+
+
+/* ============================================================
+   XAI FACTOR ICON
+============================================================ */
+
+.xai-factor-icon {
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 9px;
+}
+
+.xai-factor.increase .xai-factor-icon {
+    color: #dc2626;
+    background: #fef2f2;
+}
+
+.xai-factor.decrease .xai-factor-icon {
+    color: #059669;
+    background: #ecfdf5;
+}
+
+
+/* ============================================================
+   XAI FACTOR CONTENT
+============================================================ */
+
+.xai-factor-content {
+    min-width: 0;
+}
+
+.xai-factor-title {
+    overflow: hidden;
+
+    color: #1f2937;
+
+    font-size: 0.78rem;
+    font-weight: 750;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.xai-factor-description {
+    margin-top: 0.2rem;
+
+    color: #8a94a5;
+
+    font-size: 0.65rem;
+    line-height: 1.35;
+}
+
+
+/* ============================================================
+   XAI FACTOR VALUE
+============================================================ */
+
+.xai-factor-value {
+    min-width: 58px;
+
+    text-align: right;
+
+    font-size: 0.8rem;
+    font-weight: 800;
+}
+
+.xai-factor.increase .xai-factor-value {
+    color: #dc2626;
+}
+
+.xai-factor.decrease .xai-factor-value {
+    color: #059669;
+}
+
+
+/* ============================================================
+   EMPTY XAI
+============================================================ */
+
+.empty-xai {
+    min-height: 130px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1.25rem;
+
+    text-align: center;
+
+    color: #94a3b8;
+
+    background: #f8fafc;
+
+    border: 1px dashed #dce3ec;
+    border-radius: 0.85rem;
+}
+
+.empty-xai svg {
+    margin-bottom: 0.5rem;
+}
+
+.empty-xai p {
+    max-width: 300px;
+
+    margin: 0;
+
+    color: #7b8494;
+
+    font-size: 0.7rem;
+    line-height: 1.5;
+}
+
+
+/* ============================================================
+   IMMUNOLOGICAL SECTION
+============================================================ */
+
+.immunological-section {
+    padding: 1.25rem;
+
+    background: #ffffff;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 1.1rem;
+
+    box-shadow:
+        0 6px 20px
+        rgba(15, 23, 42, 0.035);
+}
+
+.immunological-heading {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 0.75rem;
+
+    padding-bottom: 1rem;
+
+    border-bottom: 1px solid #eef2f6;
+}
+
+.immunological-heading h4 {
+    margin: 0;
+
+    color: #172033;
+
+    font-size: 0.9rem;
+    font-weight: 750;
+}
+
+.immunological-heading p {
+    margin: 0.3rem 0 0;
+
+    color: #7b8494;
+
+    font-size: 0.7rem;
+    line-height: 1.5;
+}
+
+
+/* ============================================================
+   IMMUNOLOGICAL GRID
+============================================================ */
+
+.immune-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 0.7rem;
+
+    margin-top: 1rem;
+}
+
+.immune-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 0.75rem;
+
+    padding: 0.8rem 0.9rem;
+
+    background: #fafbfc;
+
+    border: 1px solid #e7ebf0;
+    border-radius: 0.75rem;
+}
+
+.immune-card span {
+    min-width: 0;
+
+    overflow: hidden;
+
+    color: #344054;
+
+    font-size: 0.7rem;
+    font-weight: 650;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.immune-card strong {
+    flex-shrink: 0;
+
+    font-size: 0.75rem;
+    font-weight: 800;
+}
+
+.immune-positive {
+    color: #dc2626;
+}
+
+.immune-negative {
+    color: #059669;
+}
+
+
+/* ============================================================
+   XAI DISCLAIMER
+============================================================ */
+
+.xai-disclaimer {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 0.65rem;
+
+    padding: 0.85rem 1rem;
+
+    background: #f8fafc;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 0.8rem;
+
+    color: #64748b;
+}
+
+.xai-disclaimer svg {
+    flex-shrink: 0;
+
+    margin-top: 1px;
+}
+
+.xai-disclaimer span {
+    font-size: 0.68rem;
+    line-height: 1.6;
+}
+
+
+/* ============================================================
+   XAI RESPONSIVE
+============================================================ */
+
+@media (max-width: 900px) {
+
+    .xai-columns {
+        grid-template-columns: 1fr;
+    }
+
+    .immune-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+@media (max-width: 640px) {
+
+    .xai-section {
+        margin-top: 1.25rem;
+    }
+
+    .xai-header {
+        flex-direction: column;
+        align-items: stretch;
+
+        padding: 1rem;
+    }
+
+    .xai-refresh {
+        width: 100%;
+    }
+
+    .xai-summary {
+        grid-template-columns:
+            1fr;
+    }
+
+    .xai-panel,
+    .immunological-section {
+        padding: 1rem;
+    }
+
+    .xai-panel-heading h4 {
+        font-size: 0.82rem;
+    }
+
+    .xai-factor {
+        grid-template-columns:
+            32px
+            minmax(0, 1fr)
+            auto;
+
+        gap: 0.55rem;
+
+        padding: 0.7rem;
+    }
+
+    .xai-factor-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .xai-factor-title {
+        font-size: 0.72rem;
+    }
+
+    .xai-factor-description {
+        font-size: 0.6rem;
+    }
+
+    .xai-factor-value {
+        min-width: 52px;
+
+        font-size: 0.72rem;
+    }
+
+    .immune-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 420px) {
+
+    .xai-title-wrap {
+        gap: 0.65rem;
+    }
+
+    .xai-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .xai-header h3 {
+        font-size: 1rem;
+    }
+
+    .xai-header p {
+        font-size: 0.7rem;
+    }
+
+    .xai-panel-header {
+        gap: 0.5rem;
+    }
+
+    .factor-count {
+        min-width: 24px;
+        height: 24px;
+    }
+
+    .xai-factor {
+        grid-template-columns:
+            30px
+            minmax(0, 1fr);
+
+        align-items: start;
+    }
+
+    .xai-factor-value {
+        grid-column: 2;
+
+        text-align: left;
+
+        margin-top: -0.15rem;
+    }
+
+    .xai-disclaimer {
+        padding: 0.75rem;
+    }
+}

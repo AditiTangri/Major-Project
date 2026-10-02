@@ -1,0 +1,6 @@
+check,value,status
+Real development/test ID overlap,0,PASS
+Synthetic/real ID overlap,436,INFORMATIONAL
+Exact synthetic/test feature overlap,0,PASS
+Excluded features in model,0,PASS
+studyno used as predictor,0,PASS

@@ -1,0 +1,183 @@
+.dashboard-section {
+  background: white;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.dark-dashboard {
+  background: var(--navy-900);
+  color: white;
+  border-radius: var(--radius-xl);
+  padding: 2.5rem;
+  border: 1px solid var(--navy-800);
+  box-shadow: var(--shadow-2xl);
+}
+
+.dash-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 2rem;
+}
+
+.dash-tag {
+  font-size: 0.75rem;
+  color: var(--medical-200);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.dash-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  background: rgba(20, 184, 166, 0.15);
+  color: var(--teal-500);
+  padding: 0.375rem 0.875rem;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.dash-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.dash-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.center-card {
+  align-items: center;
+  text-align: center;
+}
+
+.card-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.gauge-box {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gauge-svg {
+  transform: rotate(-90deg);
+  width: 100%;
+  height: 100%;
+}
+
+.gauge-bg {
+  stroke: rgba(255, 255, 255, 0.1);
+  stroke-width: 3.5;
+  fill: none;
+}
+
+.gauge-fill {
+  stroke: var(--medical-500);
+  stroke-width: 3.5;
+  stroke-linecap: round;
+  fill: none;
+}
+
+.gauge-text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gauge-text .num {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.gauge-text .sub {
+  font-size: 0.625rem;
+  color: var(--medical-200);
+  font-weight: 700;
+}
+
+.stat-highlight {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.text-teal { color: var(--teal-500); }
+.text-sky { color: var(--medical-200); }
+
+.card-subtext {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.track-box {
+  margin-top: 1.5rem;
+}
+
+.track-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  margin-bottom: 0.375rem;
+}
+
+.track-bg {
+  width: 100%;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.track-fill {
+  height: 100%;
+  background: var(--teal-500);
+  border-radius: var(--radius-full);
+}
+
+.track-fill.bg-sky {
+  background: var(--medical-500);
+}
+
+.prob-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.dash-disclaimer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(0,0,0,0.2);
+  padding: 0.875rem;
+  border-radius: var(--radius-md);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 868px) {
+  .dash-grid {
+    grid-template-columns: 1fr;
+  }
+}

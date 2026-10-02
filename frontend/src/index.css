@@ -1,0 +1,112 @@
+/* Root Design Tokens & Reset */
+:root {
+  --font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  /* Healthcare Palette Variables */
+  --bg-main: #f8fafc;
+  --bg-card: #ffffff;
+  --navy-950: #050a18;
+  --navy-900: #0b132b;
+  --navy-800: #0f172a;
+  --navy-700: #1e293b;
+  
+  --medical-50: #f0f7ff;
+  --medical-100: #e0f0fe;
+  --medical-200: #bae6fd;
+  --medical-500: #0284c7;
+  --medical-600: #0369a1;
+  --medical-700: #035485;
+  
+  --teal-50: #f0fdf4;
+  --teal-100: #ccfbf1;
+  --teal-500: #14b8a6;
+  --teal-600: #0d9488;
+  --teal-700: #0f766e;
+  
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+  --border-light: #e2e8f0;
+  
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.05);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.05);
+  --shadow-lg: 0 10px 25px -5px rgba(2, 132, 199, 0.08);
+  --shadow-2xl: 0 20px 40px -15px rgba(11, 19, 43, 0.2);
+  
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-full: 9999px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section-padding {
+  padding: 5rem 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section-header {
+  max-width: 48rem;
+  margin: 0 auto 4rem auto;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.025em;
+}
+
+.section-divider {
+  width: 4rem;
+  height: 4px;
+  background: var(--medical-500);
+  margin: 1rem auto;
+  border-radius: var(--radius-full);
+}
+
+.section-subtitle {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+}

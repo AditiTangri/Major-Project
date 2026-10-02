@@ -1,0 +1,60 @@
+Feature,Mean_Abs_SHAP
+pra,1.4119655
+rbmi,0.55266476
+age10,0.44207862
+dageattx,0.37873086
+ageattx,0.319777
+abomm,0.23344937
+dcmv_Negative,0.23336989
+cit,0.18535711
+ind_Campath,0.17064475
+dtype_DCD,0.15959421
+ethnicity_White,0.13863967
+mmdr,0.12967497
+prd_GN,0.09573104
+dtype_DBD,0.09105341
+yrtx,0.082589015
+totalmm,0.07712238
+induction_Campath,0.07086193
+ethnicity_Asian,0.06884147
+prd_ADPKD,0.06407705
+mma,0.054657385
+prd_Unknown,0.047180306
+premt_tx_No,0.041255534
+prd_Reflux/CPN,0.03963937
+steroid6_Less than 6mo,0.035449486
+prd_DKD,0.034976553
+ind_Simulect,0.031500533
+dtype_Living donor,0.027896397
+rebv_Negative,0.027628662
+as,0.022880338
+premt_tx_Yes,0.022747966
+dcmv_Positive,0.019309826
+indr,0.017006824
+rdm_No,0.01579587
+citcat_Less than 24h,0.0111768255
+rcmv_Negative,0.008175501
+induction_Simulect,0.007802826
+rcmv_Positive,0.007100174
+steroid6_More than 6mo,0.0069380137
+initis_Cyc,0.006726831
+age60_60 and above,0.005723739
+rebv_Positive,0.004860532
+sex_Female,0.0048060357
+rdm_Yes,0.004390963
+initis_Tac,0.004129022
+crf,0.0040835734
+sex_Male,0.0038465252
+citcat_more than 24h,0.002757324
+prd_Other,0.0025084766
+prevtx_Yes,0.0018601775
+prevtx_No,0.0010175643
+mmb,0.0
+ethnicity_Black,0.0
+ethnicity_Other,0.0
+debv_Positive,0.0
+debv_Negative,0.0
+antimet_MPA,0.0
+antimet_Aza,0.0
+initis_other,0.0
+age60_Less than 60,0.0

@@ -1,0 +1,7 @@
+{
+    "youden_threshold": 0.04,
+    "sensitivity_floor_threshold": 0.335,
+    "f2_threshold": 0.04,
+    "active_threshold": 0.335,
+    "sensitivity_floor": 0.7
+}

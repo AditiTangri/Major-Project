@@ -1,0 +1,49 @@
+processed_feature,shap_value,abs_shap_value,original_feature
+num__pra,1.7047634,1.7047634,pra
+num__rbmi,0.6696497,0.6696497,rbmi
+cat__induction_Campath,0.40213937,0.40213937,induction
+num__mmdr,-0.28889385,0.28889385,mmdr
+num__yrtx,0.27947024,0.27947024,yrtx
+num__age10,0.23716062,0.23716062,age10
+num__dageattx,0.20504302,0.20504302,dageattx
+num__crf,-0.16470194,0.16470194,crf
+num__cit,-0.14202377,0.14202377,cit
+num__ageattx,0.13494016,0.13494016,ageattx
+num__abomm,-0.12766033,0.12766033,abomm
+cat__prd_DKD,0.10244122,0.10244122,prd
+cat__sex_Female,-0.10157177,0.10157177,sex
+cat__dcmv_Negative,0.09500586,0.09500586,dcmv
+cat__induction_Simulect,0.090250194,0.090250194,induction
+num__totalmm,0.086912185,0.086912185,totalmm
+cat__dtype_Living donor,-0.08086432,0.08086432,dtype
+cat__ethnicity_White,-0.06750984,0.06750984,ethnicity
+cat__dtype_DBD,-0.06579959,0.06579959,dtype
+cat__dtype_DCD,0.042987034,0.042987034,dtype
+cat__rdm_No,0.039587405,0.039587405,rdm
+cat__prd_Reflux/CPN,-0.038471196,0.038471196,prd
+num__mma,-0.036857113,0.036857113,mma
+cat__prd_GN,0.036154546,0.036154546,prd
+cat__prd_ADPKD,0.033490684,0.033490684,prd
+cat__prd_Unknown,0.032682057,0.032682057,prd
+cat__prd_Other,-0.030434676,0.030434676,prd
+cat__premt_tx_No,-0.030409586,0.030409586,premt_tx
+cat__sex_Male,-0.02719566,0.02719566,sex
+cat__ethnicity_Asian,-0.01785846,0.01785846,ethnicity
+cat__dcmv_Positive,0.010866584,0.010866584,dcmv
+cat__rdm_Yes,0.010486625,0.010486625,rdm
+num__mmb,-0.008209632,0.008209632,mmb
+cat__citcat_Less than 24h,-0.008002963,0.008002963,citcat
+cat__rcmv_Positive,0.006460581,0.006460581,rcmv
+cat__rcmv_Negative,-0.0062549473,0.0062549473,rcmv
+cat__debv_Negative,-0.0047603324,0.0047603324,debv
+cat__age60_60 and above,0.0020287558,0.0020287558,age60
+cat__premt_tx_Yes,-0.0011012014,0.0011012014,premt_tx
+cat__debv_Positive,-0.0009177347,0.0009177347,debv
+cat__citcat_more than 24h,0.00055565906,0.00055565906,citcat
+cat__ethnicity_Black,-0.00043878757,0.00043878757,ethnicity
+cat__prevtx_No,0.00026827303,0.00026827303,prevtx
+cat__prevtx_Yes,0.0,0.0,prevtx
+cat__ethnicity_Other,0.0,0.0,ethnicity
+cat__rebv_Positive,0.0,0.0,rebv
+cat__rebv_Negative,0.0,0.0,rebv
+cat__age60_Less than 60,0.0,0.0,age60

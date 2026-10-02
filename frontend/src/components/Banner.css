@@ -1,0 +1,160 @@
+.banner-section {
+  position: relative;
+  padding: 6rem 1.5rem;
+  background:
+    radial-gradient(
+      circle at 15% 20%,
+      rgba(20, 184, 166, 0.10),
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at 85% 80%,
+      rgba(14, 165, 233, 0.08),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      var(--navy-950) 0%,
+      var(--navy-900) 55%,
+      var(--navy-800) 100%
+    );
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Subtle background pattern */
+.banner-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.025) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.025) 1px,
+      transparent 1px
+    );
+  background-size: 55px 55px;
+  opacity: 0.45;
+}
+
+/* Soft background glow */
+.banner-overlay::after {
+  content: "";
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  top: -220px;
+  right: -100px;
+  border-radius: 50%;
+  background: rgba(20, 184, 166, 0.08);
+  filter: blur(90px);
+}
+
+/* Content */
+.banner-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Remove this if you are not using the pill */
+.banner-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--teal-500);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+/* Heading */
+.banner-title {
+  position: relative;
+  margin: 0 0 1.5rem;
+  color: #ffffff;
+  font-size: clamp(2.3rem, 5vw, 3.3rem);
+  line-height: 1.1;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+/* Teal accent underneath heading */
+.banner-title::after {
+  content: "";
+  display: block;
+  width: 52px;
+  height: 3px;
+  margin: 1.25rem auto 0;
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    var(--teal-500),
+    var(--medical-500)
+  );
+}
+
+/* Description */
+.banner-subtitle {
+  max-width: 760px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 1rem;
+  line-height: 1.8;
+  font-weight: 400;
+  letter-spacing: 0.005em;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .banner-section {
+    padding: 4.5rem 1.25rem;
+  }
+
+  .banner-title {
+    font-size: 2.2rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .banner-title::after {
+    width: 45px;
+    height: 2px;
+    margin-top: 1rem;
+  }
+
+  .banner-subtitle {
+    font-size: 0.92rem;
+    line-height: 1.75;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .banner-section {
+    padding: 4rem 1rem;
+  }
+
+  .banner-title {
+    font-size: 2rem;
+  }
+
+  .banner-subtitle {
+    font-size: 0.88rem;
+    line-height: 1.7;
+  }
+
+  .banner-overlay {
+    background-size: 45px 45px;
+  }
+}

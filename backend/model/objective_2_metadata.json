@@ -1,0 +1,179 @@
+{
+    "objective": "To interpret clinical and immunological factors using XAI.",
+    "objective_number": 2,
+    "objective_1_model_retrained": false,
+    "synthetic_data_used_for_test_explanations": false,
+    "real_dataset_shape": [
+        436,
+        51
+    ],
+    "development_shape": [
+        348,
+        51
+    ],
+    "held_out_test_shape": [
+        88,
+        51
+    ],
+    "number_of_original_features": 27,
+    "number_of_processed_features": 48,
+    "features": [
+        "yrtx",
+        "prevtx",
+        "ageattx",
+        "sex",
+        "ethnicity",
+        "prd",
+        "rdm",
+        "rbmi",
+        "premt_tx",
+        "dtype",
+        "dageattx",
+        "dcmv",
+        "debv",
+        "rcmv",
+        "rebv",
+        "mma",
+        "mmb",
+        "mmdr",
+        "totalmm",
+        "abomm",
+        "crf",
+        "cit",
+        "induction",
+        "pra",
+        "age60",
+        "citcat",
+        "age10"
+    ],
+    "processed_features": [
+        "num__yrtx",
+        "num__ageattx",
+        "num__rbmi",
+        "num__dageattx",
+        "num__mma",
+        "num__mmb",
+        "num__mmdr",
+        "num__totalmm",
+        "num__abomm",
+        "num__crf",
+        "num__cit",
+        "num__pra",
+        "num__age10",
+        "cat__prevtx_No",
+        "cat__prevtx_Yes",
+        "cat__sex_Female",
+        "cat__sex_Male",
+        "cat__ethnicity_Asian",
+        "cat__ethnicity_Black",
+        "cat__ethnicity_Other",
+        "cat__ethnicity_White",
+        "cat__prd_ADPKD",
+        "cat__prd_DKD",
+        "cat__prd_GN",
+        "cat__prd_Other",
+        "cat__prd_Reflux/CPN",
+        "cat__prd_Unknown",
+        "cat__rdm_No",
+        "cat__rdm_Yes",
+        "cat__premt_tx_No",
+        "cat__premt_tx_Yes",
+        "cat__dtype_DBD",
+        "cat__dtype_DCD",
+        "cat__dtype_Living donor",
+        "cat__dcmv_Negative",
+        "cat__dcmv_Positive",
+        "cat__debv_Negative",
+        "cat__debv_Positive",
+        "cat__rcmv_Negative",
+        "cat__rcmv_Positive",
+        "cat__rebv_Negative",
+        "cat__rebv_Positive",
+        "cat__induction_Campath",
+        "cat__induction_Simulect",
+        "cat__age60_60 and above",
+        "cat__age60_Less than 60",
+        "cat__citcat_Less than 24h",
+        "cat__citcat_more than 24h"
+    ],
+    "active_classification_threshold": 0.3,
+    "classification_probability_scale": "raw_xgboost_probability",
+    "calibrated_probability_used_for": "probability_interpretation",
+    "test_metrics": {
+        "roc_auc": 0.940625,
+        "pr_auc": 0.5788961038961038,
+        "accuracy": 0.8068181818181818,
+        "balanced_accuracy": 0.89375,
+        "sensitivity": 1.0,
+        "specificity": 0.7875,
+        "precision": 0.32,
+        "f1": 0.48484848484848486,
+        "raw_probability_brier": 0.09813094136388277,
+        "calibrated_probability_brier": 0.0710817113187349
+    },
+    "shap_method": "TreeExplainer",
+    "lime_method": "LimeTabularExplainer",
+    "immunological_features": [
+        "pra",
+        "mma",
+        "mmb",
+        "mmdr",
+        "totalmm",
+        "abomm"
+    ],
+    "immunological_feature_ranking": [
+        {
+            "original_feature": "pra",
+            "mean_abs_shap": 1.5695950859649614,
+            "rank": 1
+        },
+        {
+            "original_feature": "abomm",
+            "mean_abs_shap": 0.2428977723995393,
+            "rank": 2
+        },
+        {
+            "original_feature": "mmdr",
+            "mean_abs_shap": 0.23892352459105579,
+            "rank": 3
+        },
+        {
+            "original_feature": "totalmm",
+            "mean_abs_shap": 0.0985359782763143,
+            "rank": 4
+        },
+        {
+            "original_feature": "mma",
+            "mean_abs_shap": 0.06341690299715,
+            "rank": 5
+        },
+        {
+            "original_feature": "mmb",
+            "mean_abs_shap": 0.022793435616635674,
+            "rank": 6
+        }
+    ],
+    "local_cases": [
+        {
+            "case_type": "Highest predicted incompatibility",
+            "studyno": 396.0,
+            "true_label": 1,
+            "predicted_class": 1,
+            "raw_probability": 0.9860695600509644,
+            "calibrated_probability": 0.2463936843053601,
+            "local_shap_csv": "/content/kidney_xgb_compatibility/objective_2_xai/local_shap_highest_predicted_incompatibility_396.0.csv",
+            "local_shap_plot": "/content/kidney_xgb_compatibility/objective_2_xai/local_shap_highest_predicted_incompatibility_396.0.png"
+        },
+        {
+            "case_type": "Highest probability among true-compatible",
+            "studyno": 153.0,
+            "true_label": 0,
+            "predicted_class": 1,
+            "raw_probability": 0.9660952687263489,
+            "calibrated_probability": 0.24220680460041705,
+            "local_shap_csv": "/content/kidney_xgb_compatibility/objective_2_xai/local_shap_highest_probability_among_true_compatible_153.0.csv",
+            "local_shap_plot": "/content/kidney_xgb_compatibility/objective_2_xai/local_shap_highest_probability_among_true_compatible_153.0.png"
+        }
+    ],
+    "output_directory": "/content/kidney_xgb_compatibility/objective_2_xai"
+}

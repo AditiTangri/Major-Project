@@ -1,0 +1,77 @@
+feature,mean_abs_shap
+num__pra,1.4313929
+num__rbmi,0.5364036
+num__dageattx,0.4706789
+cat__hxar_No,0.37476045
+num__ageattx,0.37197593
+num__age10,0.34729597
+cat__ind_Campath,0.29560664
+num__egfr3,0.27106693
+num__yrs to graftloss/death/end of follow up,0.25755325
+num__mmdr,0.20444885
+num__yrtx,0.1990019
+num__egfr12,0.19528657
+cat__ethnicity_White,0.19258022
+cat__dcmv_Negative,0.1866578
+num__abomm,0.18253689
+num__cit,0.16912223
+cat__dtype_DCD,0.11239355
+cat__premt_tx_No,0.111189716
+cat__dtype_DBD,0.086008556
+num__mma,0.07543009
+cat__induction_Campath,0.06907752
+cat__rcmv_Negative,0.06792466
+cat__prd_GN,0.06134511
+cat__bkvinf_No,0.06127075
+cat__prd_ADPKD,0.055034973
+cat__ind_Simulect,0.053310033
+cat__sex_Female,0.050555225
+num__totalmm,0.050267853
+cat__prd_Reflux/CPN,0.046360515
+cat__ethnicity_Asian,0.046128772
+cat__cmvinf_No,0.0402232
+cat__prd_Unknown,0.033205383
+num__indr,0.029117454
+cat__induction_Simulect,0.029061778
+cat__steroid6_Less than 6mo,0.028635882
+num__as,0.027370147
+cat__hxar_Yes,0.025888283
+cat__initis_Tac,0.023048045
+cat__dcmv_Positive,0.022959165
+cat__dtype_Living donor,0.020219637
+cat__prd_DKD,0.019422637
+cat__rgn_No,0.017486203
+cat__premt_tx_Yes,0.017020427
+num__crf,0.017018722
+cat__rdm_No,0.013901188
+cat__sex_Male,0.012342296
+cat__bkvinf_Yes,0.0094052255
+num__mmb,0.008912079
+cat__cmvinf_Yes,0.007948608
+cat__steroid6_More than 6mo,0.007132757
+cat__prd_Other,0.003774611
+cat__age60_60 and above,0.003340072
+cat__rcmv_Positive,0.0029260449
+cat__citcat_Less than 24h,0.0026216318
+cat__ptgn_No,0.0018215193
+cat__initis_Cyc,0.0016555972
+cat__rgn_Yes,0.0016036556
+cat__ebvinf_No,0.0015536086
+cat__age60_Less than 60,0.001441161
+cat__debv_Negative,0.0013423208
+cat__citcat_more than 24h,0.0010318031
+cat__prevtx_No,0.00073411275
+cat__ebvinf_Yes,0.0
+cat__dgn_No,0.0
+cat__dgn_Yes,0.0
+cat__debv_Positive,0.0
+cat__antimet_Aza,0.0
+cat__antimet_MPA,0.0
+cat__ethnicity_Black,0.0
+cat__ethnicity_Other,0.0
+cat__initis_other,0.0
+cat__prevtx_Yes,0.0
+cat__rdm_Yes,0.0
+cat__ptgn_Yes,0.0
+cat__rebv_Negative,0.0
+cat__rebv_Positive,0.0
